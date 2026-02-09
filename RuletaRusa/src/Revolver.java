@@ -16,9 +16,6 @@ class Revolver {
 
     public boolean disparar() {
         boolean exito = (posicionActual == posicionBala);
-        if (!exito) {
-            siguienteBala();
-        }
         return exito;
     }
 
