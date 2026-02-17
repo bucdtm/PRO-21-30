@@ -1,9 +1,7 @@
-package concesionarioPaquete;
+package concesionario.concesionarioPaquete;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-import static concesionarioPaquete.FuncionesCall.menu;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package concesionarioPaquete;
+package concesionario.concesionarioPaquete;
 
 import java.util.Scanner;
 
