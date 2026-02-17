@@ -1,5 +1,10 @@
 package concesionarioPaquete;
 
+import java.util.regex.Pattern;
+
+import static javax.print.attribute.standard.MediaSizeName.A;
+import static sun.jvm.hotspot.gc.shared.CollectedHeapName.Z;
+
 class Concesionario {
     String marca,modelo,color,matricula,descripcion;
     int km,precio;
@@ -28,7 +33,13 @@ class Concesionario {
 
     public String getMatricula() {return matricula;}
 
-    public void setMatricula(String matricula) {this.matricula = matricula;}
+    public void setMatricula(String matricula) {
+        if (Pattern.matches("^[0-9]{4}[AZ]{3}$", matricula)) {
+            this.matricula = matricula;
+        } else {
+            System.out.println("Formato no valido ( Sigue este patron: 1234ABC )");
+        }
+    }
 
     public String getDescripcion() {return descripcion;}
 
