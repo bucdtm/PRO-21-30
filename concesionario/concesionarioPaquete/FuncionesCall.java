@@ -1,6 +1,7 @@
-package concesionario.concesionarioPaquete;
+package concesionarioPaquete;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public class FuncionesCall {
     public static int menu(Scanner sc) {
@@ -23,5 +24,29 @@ public class FuncionesCall {
         }
         System.out.println();
         return opcion;
+    }
+    static String pedirConValidacion(Scanner sc, String mensaje, String patron) {
+        String valor;
+        do {
+            System.out.println(mensaje);
+            valor = sc.nextLine();
+            if (!Pattern.matches(patron, valor)) {
+                System.out.println("Formato no válido, inténtalo de nuevo.");
+            }
+        } while (!Pattern.matches(patron, valor));
+        return valor;
+    }
+    static int pedirEnteroPositivo(Scanner sc, String mensaje) {
+        int valor = -1;
+        do {
+            System.out.println(mensaje);
+            try {
+                valor = Integer.parseInt(sc.nextLine());
+                if (valor < 0) System.out.println("Debe ser un número positivo.");
+            } catch (NumberFormatException e) {
+                System.out.println("Debe ser un número.");
+            }
+        } while (valor < 0);
+        return valor;
     }
 }
