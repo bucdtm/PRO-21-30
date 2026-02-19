@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
-
 
 
 public class Funciones {
@@ -14,7 +12,7 @@ public class Funciones {
         System.out.println();
         while (!validar) {
             System.out.println("Escriba el nombre del cliente que quiere añadir:");
-            respuesta = Main.scanner.nextLine();
+            respuesta = maquinaExpendedora.scanner.nextLine();
             boolean existe = false;
             for (String cliente : clientes) {
                 if (respuesta.equalsIgnoreCase(cliente)) {
@@ -41,7 +39,7 @@ public class Funciones {
 
         while (!encontrado) {
             System.out.println("Escriba el nombre del cliente a eliminar (o 'salir' para cancelar):");
-            respuesta = Main.scanner.nextLine();
+            respuesta = maquinaExpendedora.scanner.nextLine();
 
             if (respuesta.equalsIgnoreCase("salir")) break;
 
@@ -82,7 +80,7 @@ public class Funciones {
 
         while (!validar) {
             System.out.println("Escriba el nombre del cliente (o 'salir'):");
-            respuesta = Main.scanner.nextLine();
+            respuesta = maquinaExpendedora.scanner.nextLine();
             if (respuesta.equalsIgnoreCase("salir")) return;
 
             posicionEnElArray = -1;
@@ -96,7 +94,7 @@ public class Funciones {
             if (posicionEnElArray != -1) {
                 System.out.println("Escriba la cantidad a sumar (positivo) o restar (negativo):");
                 try {
-                    double valor = Double.parseDouble(Main.scanner.nextLine());
+                    double valor = Double.parseDouble(maquinaExpendedora.scanner.nextLine());
                     double nuevaDeuda = deudas.get(posicionEnElArray) + valor;
 
                     if (nuevaDeuda < 0) {
@@ -133,7 +131,7 @@ public class Funciones {
 
         while (!validar) {
             System.out.println("Escriba el nombre del cliente para modificar saldo (o 'salir'):");
-            respuesta = Main.scanner.nextLine();
+            respuesta = maquinaExpendedora.scanner.nextLine();
             if (respuesta.equalsIgnoreCase("salir")) return;
 
             posicionEnElArray = -1;
@@ -147,7 +145,7 @@ public class Funciones {
             if (posicionEnElArray != -1) {
                 System.out.println("Escriba la cantidad a Ingresar (positivo) o Retirar (negativo):");
                 try {
-                    double valor = Double.parseDouble(Main.scanner.nextLine());
+                    double valor = Double.parseDouble(maquinaExpendedora.scanner.nextLine());
 
                     double nuevoSaldo = saldo.get(posicionEnElArray) + valor;
 
@@ -185,7 +183,7 @@ public class Funciones {
         System.out.println("[S] Salir");
         System.out.println("=========================================");
         System.out.print("Seleccione una opción: ");
-        String entrada = Main.scanner.nextLine();
+        String entrada = maquinaExpendedora.scanner.nextLine();
 
         if (entrada.isEmpty()) {
             return ' ';

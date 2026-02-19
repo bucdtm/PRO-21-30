@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class maquinaExpendedora {
     private static final double precio_patatas = 1.80;
 
     public static void main(String[] args) {
