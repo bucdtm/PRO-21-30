@@ -29,6 +29,10 @@ public class Main {
         listadoParticipantes.add(new Ingeniero("Alberto Puig", 57, 1100000.0, "Estrategia", "Honda", 30));
         listadoParticipantes.add(new Ingeniero("Massimo Rivola", 52, 1050000.0, "Chasis", "Aprilia", 22));
 
+        GranPremio.ordenarParrilla();
+        GranPremio.mostrarParticipantes(listadoParticipantes);
+        GranPremio.simularCarrera();
+
 
     }
 }

@@ -13,7 +13,7 @@ abstract class MiembroEquipo {
     }
 
 
-    public String realizarTarea(){
+    public static String realizarTarea(){
         return null;
     }
 

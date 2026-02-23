@@ -51,7 +51,7 @@ class Ingeniero extends MiembroEquipo implements Competidor, Comparable<Ingenier
     }
 
     public int aportarMejora(){
-        int bonus = random.nextInt(-50,100);
+        int bonus = random.nextInt(-70,100);
         return bonus+experiencia;
     }
 }

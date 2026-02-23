@@ -1,15 +1,12 @@
 package formulaPackage;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Collections;
+import java.util.*;
 
 public class GranPremio {
     private String nombreCircuito;
-    private ArrayList<MiembroEquipo> participantes = new ArrayList<>();
-    private ArrayList<Piloto> parrillaSalida = new ArrayList<>();
-    private ArrayList<Ingeniero> ingenierosCarrera = new ArrayList<>();
+    private List<MiembroEquipo> participantes;
+    private static List<Piloto> parrillaSalida = new ArrayList<>();
+    private static List<Ingeniero> ingenierosCarrera = new ArrayList<>();
     private List<String> abandonos;
     private Map<String, Integer> rendimientoTotalAcumulado;
 
@@ -25,18 +22,17 @@ public class GranPremio {
             }
         }
 
-        Collections.sort(parrillaSalida);
         Collections.sort(ingenierosCarrera);
 
         parrillaSalida = new ArrayList<>(parrillaSalida.subList(0,10));
         ingenierosCarrera = new ArrayList<>(ingenierosCarrera.subList(0,3));
     }
 
-    public void ordenarParrilla(){
+    public static void ordenarParrilla(){
         Collections.sort(parrillaSalida);
     }
 
-    public void mostrarParticipantes(ArrayList<MiembroEquipo> participantes){
+    public static void mostrarParticipantes(List<MiembroEquipo> participantes){
         for (MiembroEquipo separacion : participantes){
             if (separacion instanceof Piloto){
                 parrillaSalida.add((Piloto) separacion);
@@ -44,11 +40,31 @@ public class GranPremio {
                 ingenierosCarrera.add((Ingeniero) separacion);
             }
         }
-        System.out.println(parrillaSalida);
-        System.out.println(ingenierosCarrera);
+
+        System.out.println("Pilotos: ");
+        System.out.println();
+        for (Piloto piloto : parrillaSalida){
+            System.out.println("Nombre: "+piloto.getNombre()+" Dorsal: "+ piloto.getDorsal()+ " Escudería: "+ piloto.getEscuderia()+ " Puntos: "+ piloto.getPuntosCampeonato());
+
+        }
+        System.out.println();
+        System.out.println("Ingenieros: ");
+        System.out.println();
+        for (Ingeniero ingeniero : ingenierosCarrera){
+            System.out.println("Nombre: "+ingeniero.getNombre()+"\nEspecialidad: "+ingeniero.getEspecialidad()+"\nExperiencia: "+ ingeniero.getExperiencia());
+        }
+
+
     }
 
-    public void simularCarrera(){
+    public static void simularCarrera(List<MiembroEquipo> participantes){
+        Iterator<MiembroEquipo> it = participantes.iterator();
+        int contador = 0;
+        while (it.hasNext() && contador < 50) {
+
+        }
+
+
 
 
     }
