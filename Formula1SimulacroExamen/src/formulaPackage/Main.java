@@ -32,6 +32,7 @@ public class Main {
         GranPremio.ordenarParrilla();
         GranPremio.mostrarParticipantes(listadoParticipantes);
         GranPremio.simularCarrera();
+        GranPremio.mostrarResultados();
 
 
     }
