@@ -71,7 +71,7 @@ class Piloto extends MiembroEquipo implements Competidor, Comparable<Piloto> {
     }
 
     public int compareTo(Piloto o){
-        return Integer.compare(o.getPuntosCampeonato(), this.getPuntosCampeonato());
+        return Integer.compare(this.getPuntosCampeonato(), o.getPuntosCampeonato());
     }
 
 }
