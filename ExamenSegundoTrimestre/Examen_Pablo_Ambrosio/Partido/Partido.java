@@ -18,7 +18,6 @@ public class Partido {
     public Partido() {
         rellenarListaParticipantes();
         generarListasParticipantesSeparadas(participantes);
-
     }
 
     private void rellenarListaParticipantes() {
@@ -265,6 +264,7 @@ public class Partido {
                         (oldValue, newValue) -> oldValue,
                         LinkedHashMap::new
                 ));
+
         for (Map.Entry<String, List<Integer>> entry : anotadorTotal.entrySet()) {
             if(jugadoresLocales.get(Integer.parseInt(entry.getKey())).getEquipo().equals(equipo)) {
                 return entry.getValue();
@@ -292,6 +292,14 @@ public class Partido {
 
         int cuarto;
         String nombreJugador;
+/*
+
+declaro, tomo el map original, lo sorteo, hago una suma con la primera entrada conviertendola en stream, luego la de la segunda entrada e2,
+devuelvo una comparacion de ambas en orden descendente,
+agrupo en un map defino la clave y el valor, aseguro que no hay conflictos con duplicadas,
+ordeno al colector a guardarlo en un nuevo LinkedHashMap
+
+ */
 
         for (int i = 0; i <= 400; i++) {
             String resultado, resultadoVisitante, resultadoArbitro;

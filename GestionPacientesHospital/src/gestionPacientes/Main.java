@@ -17,12 +17,12 @@ public class Main {
     private static Queue<PacienteVisita> colaGraves = new LinkedList<>();
 
     // Contador para la reevaluación automática
-    private static int pacientesAtendidosCount = 0;
+    private static int pacientesAtendidos = 0;
 
     // Listas de datos simulados para autocompletar diagnósticos
-    private static List<String> diagnosticosMock = Arrays.asList("Gripe", "Fisura", "Gastroenteritis", "Ansiedad", "Migraña");
-    private static List<String> medicosMock = Arrays.asList("Dra. García", "Dr. López", "Dra. Martínez", "Dr. House");
-    private static List<String> tratamientosMock = Arrays.asList("Paracetamol", "Ibuprofeno", "Reposo", "Antibiótico", "Escayola");
+    private static List<String> diagnosticos = Arrays.asList("Gripe", "Fisura", "Gastroenteritis", "Ansiedad", "Migraña");
+    private static List<String> medicos = Arrays.asList("Dra. García", "Dr. López", "Dra. Martínez", "Dr. House");
+    private static List<String> tratamientos = Arrays.asList("Paracetamol", "Ibuprofeno", "Reposo", "Antibiótico", "Escayola");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -113,7 +113,7 @@ public class Main {
             PacienteVisita nuevaVisita = new PacienteVisita(
                     id, LocalDateTime.now(), null, prioridad, motivo,
                     null, null, null, false,
-                    diagnosticosMock, medicosMock, tratamientosMock
+                    diagnosticos, medicos, tratamientos
             );
 
             historialVisitas.get(id).add(nuevaVisita);
@@ -162,8 +162,8 @@ public class Main {
         System.out.println("Tratamiento: " + pacienteVisita.getTratamiento());
         System.out.println("Médico: " + pacienteVisita.getMedicoResponsable());
 
-        pacientesAtendidosCount++;
-        if (pacientesAtendidosCount % 5 == 0) {
+        pacientesAtendidos++;
+        if (pacientesAtendidos % 5 == 0) {
             reevaluacionAutomatica();
         }
     }
