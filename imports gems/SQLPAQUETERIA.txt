@@ -1,0 +1,274 @@
+/*DROP TABLE Paquete CASCADE CONSTRAINTS;
+DROP TABLE Tiene_Permiso CASCADE CONSTRAINTS;
+DROP TABLE Envio CASCADE CONSTRAINTS;
+DROP TABLE Cliente CASCADE CONSTRAINTS;
+DROP TABLE Ubicacion CASCADE CONSTRAINTS;
+DROP TABLE Empleado CASCADE CONSTRAINTS;*/
+CREATE TABLE Empleado (
+   ID_Empleado NUMBER(10) NOT NULL,
+   Nombre VARCHAR2(255) NOT NULL,
+   Puesto VARCHAR2(255) NOT NULL,
+   Salario NUMBER(10,2) NOT NULL,
+   Observaciones VARCHAR2(255),
+   CONSTRAINT pk_Empleado PRIMARY KEY (ID_Empleado)
+);
+
+CREATE TABLE Ubicacion (
+   ID_Ubicacion NUMBER(10) NOT NULL,
+   Nombre VARCHAR2(255) NOT NULL,
+   Coordenadas NUMBER(10,6) NOT NULL,
+   CONSTRAINT pk_Ubicacion PRIMARY KEY (ID_Ubicacion)
+);
+
+CREATE TABLE Envio (
+   ID_Envio NUMBER(10) NOT NULL,
+   Fecha_Envio DATE,
+   Encargado NUMBER(10) NOT NULL,
+   Ubicacion NUMBER(10) NOT NULL,
+   CONSTRAINT pk_Envio PRIMARY KEY (ID_Envio),
+   CONSTRAINT fk_Envio_Empleado 
+      FOREIGN KEY (Encargado) 
+      REFERENCES Empleado(ID_Empleado) 
+      ON DELETE CASCADE,
+   CONSTRAINT fk_Envio_Ubicacion 
+      FOREIGN KEY (Ubicacion) 
+      REFERENCES Ubicacion(ID_Ubicacion) 
+      ON DELETE CASCADE
+);
+
+CREATE TABLE Tiene_Permiso (
+   Empleado NUMBER(10) NOT NULL,
+   Ubicacion NUMBER(10) NOT NULL,
+   Nivel NUMBER(3) NOT NULL,
+   CONSTRAINT pk_Tiene_Permiso PRIMARY KEY (Empleado, Ubicacion),
+   CONSTRAINT fk_TienePermiso_Empleado 
+      FOREIGN KEY (Empleado) 
+      REFERENCES Empleado(ID_Empleado),
+   CONSTRAINT fk_TienePermiso_Ubicacion 
+      FOREIGN KEY (Ubicacion) 
+      REFERENCES Ubicacion(ID_Ubicacion)
+);
+
+CREATE TABLE Cliente (
+   Numero_Cuenta NUMBER(10) NOT NULL,
+   Nombre VARCHAR2(255) NOT NULL,
+   CONSTRAINT pk_Cliente PRIMARY KEY (Numero_Cuenta)
+);
+
+CREATE TABLE Paquete (
+   Envio NUMBER(10) NOT NULL,
+   Numero_Paquete NUMBER(10) NOT NULL,
+   Contenido VARCHAR2(255) NOT NULL,
+   Peso NUMBER(10,2) NOT NULL,
+   Remitente NUMBER(10) NOT NULL,
+   Destinatario NUMBER(10) NOT NULL,
+   CONSTRAINT pk_Paquete PRIMARY KEY (Numero_Paquete),
+   CONSTRAINT fk_Paquete_Envio 
+      FOREIGN KEY (Envio) 
+      REFERENCES Envio(ID_Envio),
+   CONSTRAINT fk_Paquete_Remitente 
+      FOREIGN KEY (Remitente) 
+      REFERENCES Cliente(Numero_Cuenta),
+   CONSTRAINT fk_Paquete_Destinatario 
+      FOREIGN KEY (Destinatario) 
+      REFERENCES Cliente(Numero_Cuenta)
+);
+
+/* =========================
+   CLIENTE (1–31)
+========================= */
+
+INSERT INTO Cliente VALUES (1, 'Zapp Brannigan');
+INSERT INTO Cliente VALUES (2, 'Al Gore''s Head');
+INSERT INTO Cliente VALUES (3, 'Barbados Slim');
+INSERT INTO Cliente VALUES (4, 'Ogden Wernstrom');
+INSERT INTO Cliente VALUES (5, 'Leo Wong');
+INSERT INTO Cliente VALUES (6, 'Lrrr');
+INSERT INTO Cliente VALUES (7, 'John Zoidberg');
+INSERT INTO Cliente VALUES (8, 'John Zoidfarb');
+INSERT INTO Cliente VALUES (9, 'Morbo');
+INSERT INTO Cliente VALUES (10, 'Judge John Whitey');
+INSERT INTO Cliente VALUES (11, 'Calculon');
+INSERT INTO Cliente VALUES (12, 'Zapp Brannigan');
+INSERT INTO Cliente VALUES (13, 'Amy Wong');
+INSERT INTO Cliente VALUES (14, 'John Zoidberg');
+INSERT INTO Cliente VALUES (15, 'Leo Wong');
+INSERT INTO Cliente VALUES (16, 'Morbo');
+INSERT INTO Cliente VALUES (17, 'Calculon');
+INSERT INTO Cliente VALUES (18, 'Fry Philip');
+INSERT INTO Cliente VALUES (19, 'Turanga Leela');
+INSERT INTO Cliente VALUES (20, 'Hubert Farnsworth');
+INSERT INTO Cliente VALUES (21, 'Hermes Conrad');
+INSERT INTO Cliente VALUES (22, 'Kif Kroker');
+INSERT INTO Cliente VALUES (23, 'Mom');
+INSERT INTO Cliente VALUES (24, 'Nibbler');
+INSERT INTO Cliente VALUES (25, 'LaBarbara Conrad');
+INSERT INTO Cliente VALUES (26, 'URL');
+INSERT INTO Cliente VALUES (27, 'Roberto');
+INSERT INTO Cliente VALUES (28, 'Clamps');
+INSERT INTO Cliente VALUES (29, 'Hedonismbot');
+INSERT INTO Cliente VALUES (30, 'Sal');
+INSERT INTO Cliente VALUES (31, 'Donbot');
+
+
+/* =========================
+   EMPLEADO (1–28)
+========================= */
+
+INSERT INTO Empleado VALUES (1, 'Phillip J. Fry', 'Repartidor', 7500, 'No confundir con otro Fry');
+INSERT INTO Empleado VALUES (2, 'Turanga Leela', 'Capitan', 10000, NULL);
+INSERT INTO Empleado VALUES (3, 'Bender Bending Rodriguez', 'Robot', 7500, NULL);
+INSERT INTO Empleado VALUES (4, 'Hubert J. Farnsworth', 'CEO', 20000, NULL);
+INSERT INTO Empleado VALUES (5, 'John A. Zoidberg', 'Medico', 25, NULL);
+INSERT INTO Empleado VALUES (6, 'Amy Wong', 'Becaria', 5000, NULL);
+INSERT INTO Empleado VALUES (7, 'Hermes Conrad', 'Burocrata', 10000, NULL);
+INSERT INTO Empleado VALUES (8, 'Scruffy Scruffington', 'Conserje', 5000, NULL);
+INSERT INTO Empleado VALUES (9, 'Phillip J. Fry', 'Repartidor', 7500, 'Empleado con pocas habilidades');
+INSERT INTO Empleado VALUES (10, 'Turanga Leela', 'Capitan', 10500, NULL);
+INSERT INTO Empleado VALUES (11, 'Bender Rodriguez', 'Robot', 7500, 'Propenso a robar cosas');
+INSERT INTO Empleado VALUES (12, 'Amy Wong', 'Becaria', 5500, NULL);
+INSERT INTO Empleado VALUES (13, 'Hermes Conrad', 'Burocrata', 11000, NULL);
+INSERT INTO Empleado VALUES (14, 'Hubert Farnsworth', 'Cientifico', 20000, 'Genio olvidadizo');
+INSERT INTO Empleado VALUES (15, 'Zoidberg', 'Medico', 1000, 'Ama las pinzas');
+INSERT INTO Empleado VALUES (16, 'Scruffy', 'Conserje', 4500, NULL);
+INSERT INTO Empleado VALUES (17, 'Calculon', 'Actor', 20000, NULL);
+INSERT INTO Empleado VALUES (18, 'Morbo', 'Presentador', 15000, NULL);
+INSERT INTO Empleado VALUES (19, 'Kif Kroker', 'Teniente', 9000, NULL);
+INSERT INTO Empleado VALUES (20, 'URL', 'Policia', 9500, NULL);
+INSERT INTO Empleado VALUES (21, 'Clamps', 'Obrero', 7000, 'Le gustan las tenazas');
+INSERT INTO Empleado VALUES (22, 'Roberto', 'Asaltante', 6000, NULL);
+INSERT INTO Empleado VALUES (23, 'Hedonismbot', 'Influencer', 30000, NULL);
+INSERT INTO Empleado VALUES (24, 'Sal', 'Transportista', 8000, NULL);
+INSERT INTO Empleado VALUES (25, 'Donbot', 'Jefe Mafia', 40000, NULL);
+INSERT INTO Empleado VALUES (26, 'Nibbler', 'Mascota', 50000, 'Inteligencia superior');
+INSERT INTO Empleado VALUES (27, 'Mom', 'Empresaria', 100000, NULL);
+INSERT INTO Empleado VALUES (28, 'LaBarbara Conrad', 'Contable', 8500, NULL);
+
+
+/* =========================
+   UBICACION (1–19)
+========================= */
+
+
+
+INSERT INTO Ubicacion VALUES (1, 'Omicron Persei 8', 1234.123456);
+INSERT INTO Ubicacion VALUES (2, 'Decapod X', 2234.123456);
+INSERT INTO Ubicacion VALUES (3, 'Marte', 3234.123456);
+INSERT INTO Ubicacion VALUES (4, 'Omega III', 4234.123456);
+INSERT INTO Ubicacion VALUES (5, 'Tarantulon VI', 5234.123456);
+INSERT INTO Ubicacion VALUES (6, 'Cannibalon', 6234.123456);
+INSERT INTO Ubicacion VALUES (7, 'DogDoo VII', 7234.123456);
+INSERT INTO Ubicacion VALUES (8, 'Nintenduu 64', 8234.123456);
+INSERT INTO Ubicacion VALUES (9, 'Amazonia', 9234.123456);
+INSERT INTO Ubicacion VALUES (10, 'Chapek 9', 1111.111111);
+INSERT INTO Ubicacion VALUES (11, 'Zuben 5', 2222.222222);
+INSERT INTO Ubicacion VALUES (12, 'Toxic Planet', 3333.333333);
+INSERT INTO Ubicacion VALUES (13, 'Neutral Planet', 4444.444444);
+INSERT INTO Ubicacion VALUES (14, 'Eternium', 5555.555555);
+INSERT INTO Ubicacion VALUES (15, 'Robo-Hungria', 6666.666666);
+INSERT INTO Ubicacion VALUES (16, 'Cybertronica', 7777.777777);
+INSERT INTO Ubicacion VALUES (17, 'Galactica 9', 8888.888888);
+INSERT INTO Ubicacion VALUES (18, 'Nebulon B', 9999.999999);
+INSERT INTO Ubicacion VALUES (19, 'Xandar Prime', 1000.000001);
+
+/*
+   TIENE_PERMISO
+========================= */
+
+INSERT INTO Tiene_Permiso VALUES (1,1,2);
+INSERT INTO Tiene_Permiso VALUES (1,2,3);
+INSERT INTO Tiene_Permiso VALUES (2,3,2);
+INSERT INTO Tiene_Permiso VALUES (2,4,4);
+INSERT INTO Tiene_Permiso VALUES (3,5,2);
+INSERT INTO Tiene_Permiso VALUES (3,6,4);
+INSERT INTO Tiene_Permiso VALUES (4,7,1);
+INSERT INTO Tiene_Permiso VALUES (19,10,3);
+INSERT INTO Tiene_Permiso VALUES (20,11,2);
+INSERT INTO Tiene_Permiso VALUES (21,12,4);
+INSERT INTO Tiene_Permiso VALUES (22,13,1);
+INSERT INTO Tiene_Permiso VALUES (23,14,5);
+INSERT INTO Tiene_Permiso VALUES (24,15,2);
+INSERT INTO Tiene_Permiso VALUES (25,16,4);
+INSERT INTO Tiene_Permiso VALUES (26,17,3);
+INSERT INTO Tiene_Permiso VALUES (27,18,5);
+INSERT INTO Tiene_Permiso VALUES (28,19,2);
+
+
+/* =========================
+   ENVIO (1–30)
+========================= */
+
+INSERT INTO ENVIO (ID_Envio, Fecha_Envio, Encargado, Ubicacion)
+VALUES (1, TO_DATE('3004-05-11','YYYY-MM-DD'), 1, 1);
+
+INSERT INTO ENVIO VALUES (2, TO_DATE('3004-05-11','YYYY-MM-DD'), 1, 2);
+INSERT INTO ENVIO VALUES (3, NULL, 2, 3);
+INSERT INTO ENVIO VALUES (4, NULL, 2, 4);
+INSERT INTO ENVIO VALUES (5, NULL, 7, 5);
+INSERT INTO ENVIO VALUES (6, TO_DATE('3004-05-12','YYYY-MM-DD'), 9, 3);
+INSERT INTO ENVIO VALUES (7, TO_DATE('3004-05-13','YYYY-MM-DD'), 10, 4);
+INSERT INTO ENVIO VALUES (8, TO_DATE('3004-05-14','YYYY-MM-DD'), 11, 5);
+INSERT INTO ENVIO VALUES (9, TO_DATE('3004-05-15','YYYY-MM-DD'), 12, 6);
+INSERT INTO ENVIO VALUES (10, TO_DATE('3004-05-16','YYYY-MM-DD'), 13, 7);
+INSERT INTO ENVIO VALUES (11, TO_DATE('3004-05-17','YYYY-MM-DD'), 14, 8);
+INSERT INTO ENVIO VALUES (12, TO_DATE('3004-05-18','YYYY-MM-DD'), 15, 9);
+INSERT INTO ENVIO VALUES (13, TO_DATE('3004-05-19','YYYY-MM-DD'), 16, 10);
+INSERT INTO ENVIO VALUES (14, TO_DATE('3004-05-20','YYYY-MM-DD'), 17, 1);
+INSERT INTO ENVIO VALUES (15, TO_DATE('3004-05-21','YYYY-MM-DD'), 18, 2);
+INSERT INTO ENVIO VALUES (16, TO_DATE('3004-05-22','YYYY-MM-DD'), 9, 3);
+INSERT INTO ENVIO VALUES (17, TO_DATE('3004-05-23','YYYY-MM-DD'), 10, 4);
+INSERT INTO ENVIO VALUES (18, TO_DATE('3004-05-24','YYYY-MM-DD'), 11, 5);
+INSERT INTO ENVIO VALUES (19, TO_DATE('3004-05-25','YYYY-MM-DD'), 12, 6);
+INSERT INTO ENVIO VALUES (20, TO_DATE('3004-05-26','YYYY-MM-DD'), 13, 7);
+INSERT INTO ENVIO VALUES (21, TO_DATE('3004-05-27','YYYY-MM-DD'), 19, 10);
+INSERT INTO ENVIO VALUES (22, TO_DATE('3004-05-28','YYYY-MM-DD'), 20, 11);
+INSERT INTO ENVIO VALUES (23, TO_DATE('3004-05-29','YYYY-MM-DD'), 21, 12);
+INSERT INTO ENVIO VALUES (24, TO_DATE('3004-05-30','YYYY-MM-DD'), 22, 13);
+INSERT INTO ENVIO VALUES (25, TO_DATE('3004-05-31','YYYY-MM-DD'), 23, 14);
+INSERT INTO ENVIO VALUES (26, TO_DATE('3004-06-01','YYYY-MM-DD'), 24, 15);
+INSERT INTO ENVIO VALUES (27, TO_DATE('3004-06-02','YYYY-MM-DD'), 25, 16);
+INSERT INTO ENVIO VALUES (28, TO_DATE('3004-06-03','YYYY-MM-DD'), 26, 17);
+INSERT INTO ENVIO VALUES (29, TO_DATE('3004-06-04','YYYY-MM-DD'), 27, 18);
+INSERT INTO ENVIO VALUES (30, TO_DATE('3004-06-05','YYYY-MM-DD'), 28, 19);
+
+COMMIT;
+
+/* =========================
+   PAQUETE (1–33)
+========================= */
+
+INSERT INTO Paquete VALUES (6,1,'Cajas misteriosas',5,12,13);
+INSERT INTO Paquete VALUES (6,2,'Cuerda',2,14,15);
+INSERT INTO Paquete VALUES (7,3,'Botellas vacias',3.5,16,17);
+INSERT INTO Paquete VALUES (7,4,'Manual instrucciones',1,18,19);
+INSERT INTO Paquete VALUES (8,5,'Componentes electronicos',7,20,12);
+INSERT INTO Paquete VALUES (8,6,'Latas aceite',6,13,14);
+INSERT INTO Paquete VALUES (9,7,'Kit herramientas',12,15,16);
+INSERT INTO Paquete VALUES (9,8,'Cables repuesto',4.5,17,18);
+INSERT INTO Paquete VALUES (10,9,'Ropa vieja',10,19,20);
+INSERT INTO Paquete VALUES (10,10,'Accesorios robot',8,12,13);
+INSERT INTO Paquete VALUES (11,11,'Repuestos nave',15,14,15);
+INSERT INTO Paquete VALUES (11,12,'Documentos secretos',0.5,16,17);
+INSERT INTO Paquete VALUES (12,13,'Cajas vacias',3,18,19);
+INSERT INTO Paquete VALUES (12,14,'Cajas llenas',4,20,12);
+INSERT INTO Paquete VALUES (13,15,'Componentes reciclados',6.5,13,14);
+INSERT INTO Paquete VALUES (14,16,'No declarado',1.5,1,2);
+INSERT INTO Paquete VALUES (15,17,'No declarado',10,2,3);
+INSERT INTO Paquete VALUES (17,18,'Cubo de krill',2,8,7);
+INSERT INTO Paquete VALUES (18,19,'No declarado',15,3,4);
+INSERT INTO Paquete VALUES (19,20,'No declarado',3,5,1);
+INSERT INTO Paquete VALUES (20,21,'No declarado',7,2,3);
+INSERT INTO Paquete VALUES (21,22,'No declarado',5,4,5);
+INSERT INTO Paquete VALUES (22,23,'No declarado',27,1,2);
+INSERT INTO Paquete VALUES (21,24,'Cristales espaciales',5,22,23);
+INSERT INTO Paquete VALUES (22,25,'Microchips ilegales',2,24,25);
+INSERT INTO Paquete VALUES (23,26,'Baterias cuanticas',8,26,27);
+INSERT INTO Paquete VALUES (24,27,'Especias raras',3,28,29);
+INSERT INTO Paquete VALUES (25,28,'Modulo energia',12,30,31);
+INSERT INTO Paquete VALUES (26,29,'Propulsor pequeno',15,22,24);
+INSERT INTO Paquete VALUES (27,30,'Raciones militares',6,25,26);
+INSERT INTO Paquete VALUES (28,31,'Armadura robotica',20,27,28);
+INSERT INTO Paquete VALUES (29,32,'Dispositivo misterioso',1,29,30);
+INSERT INTO Paquete VALUES (30,33,'Contrato firmado',0.5,31,22);
+
+COMMIT;

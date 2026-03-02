@@ -1,0 +1,179 @@
+/* PRÁCTICA DE SQL: BASE DE DATOS CICLISMO
+  Instrucciones: Escribe la consulta correspondiente debajo de cada comentario.
+*/
+
+-- ==========================================
+-- CONSULTAS BÁSICAS
+-- ==========================================
+
+-- 0. Mostrar todos los datos de todos los ciclistas.
+
+-- 1. Mostrar el nombre y la edad de los ciclistas con edad mayor o igual a 25 años.
+
+-- 2. Mostrar el nombre de los ciclistas que pertenecen al equipo 'Telecom'.
+
+-- 3. Mostrar el nombre de los ciclistas del equipo 'Telecom' que tengan más de 25 años.
+
+-- 4. Mostrar de las etapas solo la ciudad de salida y la de llegada.
+
+-- 5. Mostrar las etapas que tengan más de 150 km y menos de 200 km.
+
+-- 6. Mostrar las etapas que han ganado el ciclista con dorsal 4 o el ciclista con dorsal 5.
+
+-- 7. Mostrar las etapas que tienen la salida en 'Granada' o en 'Cáceres'.
+
+-- 8. Mostrar el número de etapa ganado por el dorsal 2 que tenga más de 150 km.
+
+-- 9. Mostrar los dorsales (sin repetir) de los ciclistas que han ganado etapas de más de 100 km.
+
+
+-- ==========================================
+-- ORDENACIÓN Y AGREGACIÓN
+-- ==========================================
+
+-- 10. Mostrar el número de etapa, la ciudad de salida y los km, ordenados de la etapa más corta a la más larga.
+
+-- 11. Mostrar el número de etapa, la ciudad de salida y los km, ordenados de la etapa más larga a la más corta.
+
+-- 12. Ordenar alfabéticamente los ciclistas por nombre del equipo 'Telecom'.
+
+-- 13. ¿Cuántos ciclistas hay en total en la tabla ciclista?
+
+-- 14. ¿Cuántos equipos hay registrados en la base de datos?
+
+-- 15. ¿Cuántos ciclistas tiene el equipo 'Telecom'?
+
+-- 16. ¿Cuántos ciclistas diferentes han ganado alguna etapa?
+
+-- 17. Mostrar los maillots ordenados de mayor a menor premio, indicando el premio y el tipo.
+
+-- 18. Mostrar cuántas etapas hay de más de 170 km.
+
+-- 19. Mostrar los equipos por orden alfabético descendente según el nombre de su director.
+
+-- 20. ¿Cuántos ciclistas distintos han llevado algún maillot?
+
+-- 21. Mostrar los dorsales distintos que han llevado algún maillot.
+
+
+-- ==========================================
+-- FUNCIONES DE GRUPO (MIN, MAX, AVG, SUM)
+-- ==========================================
+
+-- 22. Mostrar el valor de los kilómetros de la etapa más larga.
+
+-- 23. Mostrar el valor de los kilómetros de la etapa más corta.
+
+-- 24. Calcular la media de kilómetros de todas las etapas.
+
+-- 25. Sumar el total de los premios de todos los maillots.
+
+-- 26. ¿Cuántos kilómetros tiene en total la vuelta ciclista (suma de todas las etapas)?
+
+-- 27. Mostrar los ciclistas cuyo nombre empieza por la letra 'A'.
+
+
+-- ==========================================
+-- JOINS (CONSULTAS MULTITABLA)
+-- ==========================================
+
+-- 28. Mostrar el dorsal de los ciclistas que han llevado el maillot de color 'Amarillo'.
+
+-- 29. Mostrar el nombre de los ciclistas que han llevado el maillot de color 'Amarillo'.
+
+-- 30. ¿Cuántos ciclistas distintos han llevado el maillot 'Amarillo'?
+
+-- 31. ¿Cuántos ciclistas tiene cada equipo? (Nombre del equipo y cantidad, ordenado desc por número de ciclistas).
+
+-- 32. Obtener cuántos ciclistas de más de 25 años tiene cada equipo.
+
+-- 33. Obtener el nombre del equipo, su director y cuántos ciclistas de nacionalidad 'Alemana' y más de 25 años tiene cada equipo.
+
+-- 34. Mostrar cuántos maillots ha llevado cada ciclista (por dorsal y nombre).
+
+-- 35. Mostrar cuántos maillots DISTINTOS ha llevado cada ciclista.
+
+-- 36. ¿Cuánto suman los kilómetros de las etapas que ha ganado cada ciclista (dorsal)?
+
+-- 37. Obtener la media de altura de los puertos de cada etapa, indicando el número de etapa y cuántos puertos tiene.
+
+-- 38. Obtener cuántos puertos de más de 2000 metros ha ganado cada ciclista, sacando su nombre y su equipo.
+
+-- 39. Obtener cuántos maillots de cada tipo ha llevado cada ciclista, mostrando el color del maillot y el nombre del ciclista.
+
+-- 40. Obtener cuántas etapas ha ganado cada equipo, mostrando nombre del equipo y director.
+
+-- 41. Obtener por cada equipo cuántos ciclistas tiene de cada nacionalidad.
+
+-- 42. Mostrar los equipos que tengan 5 o más ciclistas (Uso de HAVING).
+
+-- 43. Mostrar los equipos cuya edad media de sus ciclistas sea menor de 30 años.
+
+-- 44. Mostrar todos los ciclistas y, para aquellos que hayan ganado alguna etapa, mostrar el número de dicha etapa.
+
+-- 45. Mostrar todas las etapas y la información de los ciclistas que las han ganado.
+
+
+-- ==========================================
+-- SUBCONSULTAS Y OPERACIONES AVANZADAS
+-- ==========================================
+
+-- 46. Obtener la ciudad de salida de la etapa con menos kilómetros de toda la vuelta.
+
+-- 47. Mostrar las etapas que tengan más kilómetros que la media de kilómetros de todas las etapas.
+
+-- 48. Obtener el nombre y la altura de los puertos que tengan una altura mayor que la del puerto 'Arcalis' o 'Coll de la Comella'.
+
+-- 49. Mostrar los puertos cuya altura sea mayor que la de ALGUNO de los puertos 'Arcalis' o 'Coll de la Comella'.
+
+-- 50. Mostrar los puertos cuya altura sea mayor que la de TODOS los puertos 'Arcalis' o 'Coll de la Comella'.
+
+-- 51. Mostrar los ciclistas que pertenecen al mismo equipo que 'Gerd Audehm' (excluyéndolo a él).
+
+-- 52. Mostrar los ciclistas que NO pertenecen al mismo equipo que 'Gerd Audehm'.
+
+-- 53. Mostrar los códigos de los maillots que no han sido llevados por ningún ciclista.
+
+-- 54. Mostrar el nombre de los ciclistas que no han llevado ningún maillot.
+
+-- 55. Mostrar los ciclistas que han llevado los mismos maillots (por código) que el ciclista 'Alex Zulle'.
+
+
+-- ==========================================
+-- DML (ACTUALIZACIONES Y BORRADOS)
+-- ==========================================
+
+-- 56. Actualizar la edad del ciclista con dorsal 9 a 28 años.
+
+-- 57. Aumentar en 1000 el premio de los maillots que ha llevado el ciclista con dorsal 2.
+
+-- 58. Modificar la nacionalidad a 'Española' y la edad a 30 para el ciclista 'Alex Zulle'.
+
+-- 59. Insertar un nuevo equipo llamado 'Equipo1' cuyo director es 'Jose Luis'.
+
+-- 60. Borrar el equipo 'Equipo1'.
+
+
+-- ==========================================
+-- CONSULTAS COMPLEJAS Y REPASO FINAL
+-- ==========================================
+
+-- 61. Mostrar el nombre de los equipos que tengan más de 4 ciclistas.
+
+-- 62. Mostrar el nombre del equipo que tiene más ciclistas de toda la base de datos.
+
+-- 63. Mostrar el nombre del equipo que tiene menos ciclistas.
+
+-- 64. Mostrar el equipo cuya edad media de sus ciclistas sea la menor.
+
+-- 65. Mostrar el nombre del ciclista que más dinero ha ganado en premios por maillots.
+
+-- 66. Mostrar los dorsales de los ciclistas que SOLO han llevado maillots de color 'Azul'.
+
+-- 67. Mostrar los maillots cuyo premio es mayor o igual al premio del maillot 'Verde'.
+
+-- 68. Mostrar la etapa (salida y llegada) más larga de las ganadas por el dorsal 2.
+
+-- 69. Mostrar el nombre del ciclista que ha ganado más puertos.
+
+-- 70. Mostrar el nombre de los ciclistas que han ganado etapas, pero ÚNICAMENTE etapas de más de 220 km.

@@ -1,0 +1,24 @@
+/* RETO SQL: BD PAQUETERIA 
+*/
+
+-- 1. Mostrar el nombre del empleado y el peso total de los paquetes que ha gestionado en sus envíos.
+
+-- 2. Mostrar la ubicación con mas paquetes enviados.
+
+-- 3. Clientes que han enviado paquetes pero nunca han recibido.
+
+-- 4. Peso medio de paquetes por ubicación.
+
+-- 5. Empleados cuyo salario es mayor que la media de su puesto.
+
+-- 6. Clientes que nunca han enviado paquetes.
+
+-- 7. Empleados que han realizado envíos a ubicaciones donde tienen permiso.
+
+-- 8. Mostrar todos los clientes que han enviado algún paquete al mismo destino que los enviados por el cliente Zapp Brannigan.
+
+-- 9. Mostrar todas las ubicaciones y aquellas a las que se ha enviado algún paquete, la fecha de envío.
+
+-- 10. Empleado que ha realizado más envíos.
+
+-- 11. Ubicación donde se ha enviado el paquete MÁS pesado.
