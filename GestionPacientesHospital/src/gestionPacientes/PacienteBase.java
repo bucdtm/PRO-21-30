@@ -7,11 +7,11 @@ public class PacienteBase {
     String id;
     String nombre;
     String apellidos;
-    LocalDate fechaNacimiento; // format as DD-MM-YYYY
-    String telefono; // format as a regex ^\d{9}$ use function imported from concesionario
+    LocalDate fechaNacimiento;
+    String telefono;
 
     public PacienteBase(String id, String nombre, String apellidos, LocalDate fechaNacimiento, String telefono) {
-        if (id == null || id.isBlank()) { // nulo = vacio tho
+        if (id == null || id.isBlank()) {
             throw new IllegalArgumentException("El id no puede ser nulo.");
         }
 

@@ -11,12 +11,12 @@ public class PacienteVisita {
     String id;
     LocalDateTime fechaEntrada;
     LocalDateTime fechaSalida;
-    int prioridad; // represents priority from 1-10 lower to higher
+    int prioridad;
     String motivo;
     String diagnostico;
     String tratamiento;
     String medicoResponsable;
-    boolean atendido; // if true get out of queue
+    boolean atendido;
 
     List<String> diagnosticos, medicos, tratamientos = new ArrayList<>();
 
