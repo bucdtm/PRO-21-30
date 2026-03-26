@@ -19,7 +19,7 @@ public class Aplicacion {
         System.out.println("\n=== VETERANOS (30+ años) ===");
         equipo.obtenerVeteranos(30).forEach(System.out::println);
 
-        // Mostrar cantidad por posició
+        // Mostrar cantidad por posición
         equipo.cuantosPorPosicion();
     }
 
