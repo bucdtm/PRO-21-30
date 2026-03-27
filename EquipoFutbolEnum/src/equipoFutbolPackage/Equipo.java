@@ -12,7 +12,7 @@ public class Equipo {
             Posicion.CENTROCAMPISTA, 5,
             Posicion.DELANTERO, 4
     );
-
+    
     public Equipo(String nombre) {
         this.nombre = nombre;
         this.futbolistas = new HashSet<>();
