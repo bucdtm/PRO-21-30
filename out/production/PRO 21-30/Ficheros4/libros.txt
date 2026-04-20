@@ -1,0 +1,263 @@
+El juego de Ender;Orson Scott Card;9.95
+La tabla de Flandes;Arturo Pérez Reverte;7.90
+La historia interminable;Michael Ende;12.70
+El código Da Vinci;Dan Brown;15.50
+El poder del perro, de Don Winslow;Harper Collins;19,95
+La suerte del enano;César Pérez Gellida;15,54
+La paciente silenciosa;Alex Michaelides;20,95
+Cuentos completos;Edgar Allan Poe;13
+La puerta de los ángeles;Penelope Fitzgerald;15,75
+Otra vuelta de tuerca;Henry James;6,75
+Asesinato en el Orient Express;Agatha Christie;11,45
+El halcón Maltés;Dashiell Hammett;8,99
+1984;George Orwell;12.50
+Cien años de soledad;Gabriel García Márquez;18.90
+Reina Roja;Juan Gómez-Jurado;20.90
+El resplandor;Stephen King;14.25
+Crónica de una muerte anunciada;Gabriel García Márquez;9.95
+El Psicoanalista;John Katzenbach;16.50
+Orgullo y prejuicio;Jane Austen;7.95
+La sombra del viento;Carlos Ruiz Zafón;21.00
+Los pilares de la Tierra;Ken Follett;24.95
+El alquimista;Paulo Coelho;11.00
+Fahrenheit 451;Ray Bradbury;10.50
+Drácula;Bram Stoker;8.40
+El guardián entre el centeno;J.D. Salinger;13.20
+Tokio Blues;Haruki Murakami;15.90
+La chica del tren;Paula Hawkins;17.80
+El nombre de la rosa;Umberto Eco;12.95
+Sapiens;Yuval Noah Harari;22.50
+La catedral del mar;Ildefonso Falcones;19.00
+Patria;Fernando Aramburu;21.50
+Ensayo sobre la ceguera;José Saramago;14.70
+Línea de fuego;Arturo Pérez-Reverte;20.90
+Dune;Frank Herbert;18.00
+El silencio de los corderos;Thomas Harris;11.50
+Las legiones malditas;Santiago Posteguillo;15.95
+El amor en los tiempos del cólera;Gabriel García Márquez;13.50
+American Gods;Neil Gaiman;17.00
+Cementerio de animales;Stephen King;12.90
+Matar a un ruiseñor;Harper Lee;10.95
+El señor de los anillos;J.R.R. Tolkien;29.99
+Un mundo feliz;Aldous Huxley;11.20
+El retrato de Dorian Gray;Oscar Wilde;6.95
+Crónicas marcianas;Ray Bradbury;9.50
+Moby Dick;Herman Melville;14.00
+Don Quijote de la Mancha;Miguel de Cervantes;25.00
+Crimen y castigo;Fiódor Dostoyevski;12.00
+La metamorfosis;Franz Kafka;5.50
+El túnel;Ernesto Sabato;9.00
+Rayuela;Julio Cortázar;16.40
+Sobre héroes y tumbas;Ernesto Sabato;13.80
+La tregua;Mario Benedetti;10.50
+Pedro Páramo;Juan Rulfo;8.90
+El Aleph;Jorge Luis Borges;11.75
+Ficciones;Jorge Luis Borges;11.75
+20.000 leguas de viaje submarino;Julio Verne;9.90
+Viaje al centro de la Tierra;Julio Verne;8.50
+La isla del tesoro;Robert Louis Stevenson;7.80
+Sherlock Holmes: Estudio en escarlata;Arthur Conan Doyle;6.50
+El sabueso de los Baskerville;Arthur Conan Doyle;7.50
+Frankenstein;Mary Shelley;9.00
+La naranja mecánica;Anthony Burgess;11.95
+Los juegos del hambre;Suzanne Collins;15.00
+Harry Potter y la piedra filosofal;J.K. Rowling;16.95
+El Hobbit;J.R.R. Tolkien;14.50
+Canción de hielo y fuego: Juego de Tronos;George R.R. Martin;22.00
+Ready Player One;Ernest Cline;17.50
+El marciano;Andy Weir;16.00
+Fundación;Isaac Asimov;12.50
+Yo, Robot;Isaac Asimov;10.00
+Neuromante;William Gibson;13.50
+Snow Crash;Neal Stephenson;15.90
+El problema de los tres cuerpos;Cixin Liu;19.90
+La mano izquierda de la oscuridad;Ursula K. Le Guin;12.00
+Crónicas de la Dragonlance;Margaret Weis;21.50
+El nombre del viento;Patrick Rothfuss;23.00
+El temor de un hombre sabio;Patrick Rothfuss;24.95
+Mistborn: El imperio final;Brandon Sanderson;18.90
+El camino de los reyes;Brandon Sanderson;28.50
+American Psycho;Bret Easton Ellis;14.00
+Fight Club;Chuck Palahniuk;13.00
+Trainspotting;Irvine Welsh;12.50
+On the Road;Jack Kerouac;11.00
+El gran Gatsby;F. Scott Fitzgerald;9.50
+Las uvas de la ira;John Steinbeck;14.90
+De ratones y hombres;John Steinbeck;10.00
+El viejo y el mar;Ernest Hemingway;8.95
+Por quién doblan las campanas;Ernest Hemingway;15.00
+A sangre fría;Truman Capote;13.50
+Desayuno con diamantes;Truman Capote;10.00
+La carretera;Cormac McCarthy;12.00
+No es país para viejos;Cormac McCarthy;14.50
+Los hombres que no amaban a las mujeres;Stieg Larsson;19.50
+La chica que soñaba con una cerilla y un bidón de gasolina;Stieg Larsson;19.50
+El mapa y el territorio;Michel Houellebecq;18.00
+Sumisión;Michel Houellebecq;17.50
+Seda;Alessandro Baricco;12.00
+La insoportable levedad del ser;Milan Kundera;14.90
+Lolita;Vladimir Nabokov;12.50
+El amante de Lady Chatterley;D.H. Lawrence;9.00
+Ulises;James Joyce;21.00
+Dublineses;James Joyce;10.00
+Al faro;Virginia Woolf;11.00
+La señora Dalloway;Virginia Woolf;11.00
+Esperando a Godot;Samuel Beckett;8.00
+El extranjero;Albert Camus;9.50
+La peste;Albert Camus;11.00
+Náusea;Jean-Paul Sartre;12.00
+El segundo sexo;Simone de Beauvoir;19.00
+La ciudad y los perros;Mario Vargas Llosa;14.50
+La fiesta del Chivo;Mario Vargas Llosa;16.00
+Conversación en La Catedral;Mario Vargas Llosa;18.00
+El código Da Vinci;Dan Brown;15.50
+Ángeles y demonios;Dan Brown;14.95
+Inferno;Dan Brown;16.00
+El símbolo perdido;Dan Brown;15.50
+Origen;Dan Brown;18.90
+El resplandor;Stephen King;12.95
+It (Eso);Stephen King;22.00
+Misery;Stephen King;11.40
+Carrie;Stephen King;9.90
+El instituto;Stephen King;21.90
+Doctor Sueño;Stephen King;15.00
+La milla verde;Stephen King;13.50
+Cujo;Stephen King;10.20
+El bazar de los malos sueños;Stephen King;17.80
+Todo oscuro, sin estrellas;Stephen King;16.50
+La chica que amaba a Tom Gordon;Stephen King;9.50
+La cúpula;Stephen King;19.95
+La torre oscura I: El pistolero;Stephen King;14.00
+La torre oscura II: La llegada de los tres;Stephen King;29.99
+La torre oscura III: Las tierras baldías;Stephen King;14.00
+Un saco de huesos;Stephen King;12.00
+Cell;Stephen King;11.50
+Apocalipsis;Stephen King;25.90
+Blanca Olmedo;Lucila Gamero;8.50
+Cuentos de la selva;Horacio Quiroga;7.20
+Los pasos perdidos;Alejo Carpentier;13.00
+El siglo de las luces;Alejo Carpentier;14.50
+Doña Bárbara;Rómulo Gallegos;10.00
+Canaima;Rómulo Gallegos;9.80
+La vorágine;José Eustasio Rivera;11.20
+Huandacareo;Rafael Bernal;12.50
+El complot mongol;Rafael Bernal;15.00
+Las batallas en el desierto;José Emilio Pacheco;9.50
+Aura;Carlos Fuentes;8.00
+La muerte de Artemio Cruz;Carlos Fuentes;14.00
+Terra Nostra;Carlos Fuentes;28.00
+Gringo viejo;Carlos Fuentes;12.90
+La región más transparente;Carlos Fuentes;16.00
+Pantaleón y las visitadoras;Mario Vargas Llosa;13.50
+La tía Julia y el escribidor;Mario Vargas Llosa;14.90
+La guerra del fin del mundo;Mario Vargas Llosa;19.00
+Lituma en los Andes;Mario Vargas Llosa;12.50
+El paraíso en la otra esquina;Mario Vargas Llosa;17.00
+Travesuras de la niña mala;Mario Vargas Llosa;15.90
+El sueño del celta;Mario Vargas Llosa;18.50
+Cinco esquinas;Mario Vargas Llosa;19.90
+Tiempos recios;Mario Vargas Llosa;20.90
+La hojarasca;Gabriel García Márquez;9.00
+El coronel no tiene quien le escriba;Gabriel García Márquez;8.50
+La mala hora;Gabriel García Márquez;10.00
+Relato de un náufrago;Gabriel García Márquez;7.95
+Ojos de perro azul;Gabriel García Márquez;9.90
+La increíble y triste historia de la cándida Eréndira;Gabriel García Márquez;11.00
+Vivir para contarla;Gabriel García Márquez;21.00
+Memoria de mis putas tristes;Gabriel García Márquez;12.00
+Noticia de un secuestro;Gabriel García Márquez;16.00
+El general en su laberinto;Gabriel García Márquez;14.50
+Del amor y otros demonios;Gabriel García Márquez;13.00
+Los funerales de la Mamá Grande;Gabriel García Márquez;9.50
+Doce cuentos peregrinos;Gabriel García Márquez;12.50
+Eva Luna;Isabel Allende;14.90
+Cuentos de Eva Luna;Isabel Allende;12.00
+De amor y de sombra;Isabel Allende;13.50
+La casa de los espíritus;Isabel Allende;18.00
+Paula;Isabel Allende;15.00
+Hija de la fortuna;Isabel Allende;16.50
+Retrato en sepia;Isabel Allende;16.50
+La ciudad de las bestias;Isabel Allende;12.95
+El reino del dragón de oro;Isabel Allende;12.95
+El bosque de los pigmeos;Isabel Allende;12.95
+Inés del alma mía;Isabel Allende;17.00
+La isla bajo el mar;Isabel Allende;19.00
+El cuaderno de Maya;Isabel Allende;18.00
+El amante japonés;Isabel Allende;19.90
+Más allá del invierno;Isabel Allende;20.00
+Largo pétalo de mar;Isabel Allende;21.50
+Violeta;Isabel Allende;22.00
+El principito;Antoine de Saint-Exupéry;6.00
+Vuelo nocturno;Antoine de Saint-Exupéry;9.50
+Tierra de hombres;Antoine de Saint-Exupéry;11.00
+La tregua;Primo Levi;12.50
+Si esto es un hombre;Primo Levi;14.00
+Los hundidos y los salvados;Primo Levi;13.50
+El sistema periódico;Primo Levi;15.00
+Crónicas de la Dragonlance: El retorno de los dragones;Margaret Weis y Tracy Hickman;11.95
+Crónicas de la Dragonlance: La tumba de Huma;Margaret Weis y Tracy Hickman;11.95
+Crónicas de la Dragonlance: La reina de la oscuridad;Margaret Weis y Tracy Hickman;11.95
+Leyendas de la Dragonlance: El templo de Istar;Margaret Weis y Tracy Hickman;12.50
+Leyendas de la Dragonlance: La guerra de los enanos;Margaret Weis y Tracy Hickman;12.50
+Leyendas de la Dragonlance: El umbral del poder;Margaret Weis y Tracy Hickman;12.50
+El elfo oscuro: La morada;R.A. Salvatore;10.95
+El elfo oscuro: El exilio;R.A. Salvatore;10.95
+El elfo oscuro: El refugio;R.A. Salvatore;10.95
+Crónicas de Belgarath: La senda de la profecía;David Eddings;13.00
+Crónicas de Belgarath: La reina de la hechicería;David Eddings;13.00
+Crónicas de Belgarath: La luz del orbe;David Eddings;13.00
+Crónicas de Belgarath: El castillo del ayer;David Eddings;13.00
+Crónicas de Belgarath: La ciudad de las tinieblas;David Eddings;13.00
+La espada de Shannara;Terry Brooks;14.50
+Las piedras élficas de Shannara;Terry Brooks;14.50
+El cantar de Shannara;Terry Brooks;14.50
+Memorias de Idhún: La Resistencia;Laura Gallego García;18.95
+Memorias de Idhún: Tríada;Laura Gallego García;19.95
+Memorias de Idhún: Panteón;Laura Gallego García;21.95
+Donde los árboles cantan;Laura Gallego García;14.90
+El libro de los portales;Laura Gallego García;16.00
+La emperatriz de los Etéreos;Laura Gallego García;13.50
+Dos velas para el diablo;Laura Gallego García;14.50
+El club de los incomprendidos;Blue Jeans;17.00
+¡Buenos días, princesa!;Blue Jeans;16.00
+No sonrías que me enamoro;Blue Jeans;16.00
+¿Puedo soñar contigo?;Blue Jeans;16.00
+Tengo un secreto: El diario de Meri;Blue Jeans;15.50
+La chica invisible;Blue Jeans;18.00
+El puzzle de cristal;Blue Jeans;18.00
+La promesa de Julia;Blue Jeans;18.00
+Crepúsculo;Stephenie Meyer;17.95
+Luna nueva;Stephenie Meyer;17.95
+Eclipse;Stephenie Meyer;17.95
+Amanecer;Stephenie Meyer;19.95
+La segunda vida de Bree Tanner;Stephenie Meyer;12.00
+The Host (La huésped);Stephenie Meyer;18.50
+Sol de medianoche;Stephenie Meyer;22.00
+Divergente;Veronica Roth;15.00
+Insurgente;Veronica Roth;15.00
+Leal;Veronica Roth;15.00
+Cuatro;Veronica Roth;12.50
+Carve the Mark: Las marcas de la muerte;Veronica Roth;17.90
+Destinos divididos;Veronica Roth;17.90
+Cazadores de Sombras: Ciudad de Hueso;Cassandra Clare;17.95
+Cazadores de Sombras: Ciudad de Ceniza;Cassandra Clare;17.95
+Cazadores de Sombras: Ciudad de Cristal;Cassandra Clare;17.95
+Cazadores de Sombras: Ciudad de los Ángeles Caídos;Cassandra Clare;17.95
+Cazadores de Sombras: Ciudad de las Almas Perdidas;Cassandra Clare;17.95
+Cazadores de Sombras: Ciudad del Fuego Celestial;Cassandra Clare;19.95
+Cazadores de Sombras: Los Orígenes: Ángel Mecánico;Cassandra Clare;16.50
+Cazadores de Sombras: Los Orígenes: Príncipe Mecánico;Cassandra Clare;16.50
+Cazadores de Sombras: Los Orígenes: Princesa Mecánica;Cassandra Clare;16.50
+Percy Jackson y el ladrón del rayo;Rick Riordan;13.50
+Percy Jackson y el mar de los monstruos;Rick Riordan;13.50
+Percy Jackson y la maldición del titán;Rick Riordan;13.50
+Percy Jackson y la batalla del laberinto;Rick Riordan;13.50
+Percy Jackson y el último héroe del Olimpo;Rick Riordan;13.50
+El héroe perdido;Rick Riordan;16.00
+El hijo de Neptuno;Rick Riordan;16.00
+La marca de Atenea;Rick Riordan;16.00
+La casa de Hades;Rick Riordan;16.00
+La sangre del Olimpo;Rick Riordan;16.00
+La pirámide roja;Rick Riordan;15.50
+El trono de fuego;Rick Riordan;15.50
+La sombra de la serpiente;Rick Riordan;15.50
