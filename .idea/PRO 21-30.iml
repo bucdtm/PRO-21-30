@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/GestionPacientesHospital/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LaDivisaLoca/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/GestionInventarioHibrido/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Ficheros/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
