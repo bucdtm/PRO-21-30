@@ -20,4 +20,6 @@ public enum Posicion {
     public double getSalarioMaximo() {
         return salarioMaximo;
     }
+
 }
+
