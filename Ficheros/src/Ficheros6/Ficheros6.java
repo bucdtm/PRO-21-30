@@ -13,6 +13,9 @@ public class Ficheros6 {
     static final String ARCHIVO = "alumnos.csv";
     static void main() {
         List<Alumno> Alumnos = alumnosParseados(ARCHIVO);
+
+
+
     }
     static List<Alumno> alumnosParseados(String archivo){
         try (BufferedReader lector = new BufferedReader(new FileReader(archivo))) {
@@ -45,4 +48,5 @@ public class Ficheros6 {
             return;
         }
     }
+    main
 }

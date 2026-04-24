@@ -68,6 +68,7 @@ public class ClaseAuxiliarRegistroApellidos {
             for (Apellido ap : listaOrdenada) {
                 System.out.println(" - " + ap.getApellido());
             }
+
         }
     }
 
