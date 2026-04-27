@@ -11,8 +11,10 @@ import java.util.stream.Collectors;
 
 public class Ficheros6 {
     static final String ARCHIVO = "alumnos.csv";
+    static final String ARCHIVO2 = "alumnosOrdenados.txt";
     static void main() {
-        List<Alumno> Alumnos = alumnosParseados(ARCHIVO);
+        List<Alumno> alumnos = alumnosParseados(ARCHIVO);
+        ordenacionPorApellido(alumnos, ARCHIVO2);
 
 
 
@@ -23,9 +25,10 @@ public class Ficheros6 {
                     .map(linea -> {
                         String[] partes = linea.split(";");
 
-                        int[] notas = new int[partes.length-3];
+                        //Sara;Lopez Green;32;7;10;6;7,4;7,5;8,5
+                        double[] notas = new double[partes.length-3];
                         for (int i = 0; i < notas.length; i++) {
-                            notas[i] = Integer.parseInt(partes[i+3]);
+                            notas[i] = Double.parseDouble(partes[i+3].replace(",", "."));
                         }
 
 //                        if (partes.length != 3) throw new IllegalArgumentException("Formato inválido: " + linea);
@@ -41,12 +44,23 @@ public class Ficheros6 {
         List<Alumno> ordenApellido = listaAlumnos.stream()
                 .sorted(Comparator.comparing(Alumno::getApellido))
                 .collect(Collectors.toList());
-        try (BufferedWriter escribir = new BufferedWriter(new FileWriter(archivo))) {
-            escribir.write(ordenApellido.stream().map(Alumno::toString).collect(Collectors.toList()));
-        } catch (IOException e) {
+        try (BufferedWriter escribir = new BufferedWriter(new FileWriter(archivo, false))) {
+            escribir.write("apellido;nombre;edad;nota1;nota2;nota3;nota4;nota5;nota6;");
+            escribir.newLine();
+            for(Alumno alumno : ordenApellido){
+                escribir.write(alumno.toString());
+                escribir.newLine();
+            }
+//                try {
+//                    escribir.write(String.valueOf(ordenApellido.stream().map(Alumno::toString).collect(Collectors.toList())));
+//                } catch (IOException e) {
+//                    throw new RuntimeException(e);
+//                }
+            } catch (IOException e) {
             System.err.println("Error al escribir en el fichero: " + e.getMessage());
-            return;
-        }
+            }
     }
-    main
+    static void alumnosEstadisticas(List<Alumno> listaAlumnos, String archivo){
+        int notas
+    }
 }

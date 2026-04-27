@@ -2,13 +2,15 @@ package Ficheros6;
 
 public class Alumno {
     private String nombre;
-    private String Apellido;
+    private String apellido;
     private int edad;
+    private double[] notasModulo;
 
-    public Alumno(String nombre, String apellido, int edad, int... notasModulo) {
+    public Alumno(String nombre, String apellido, int edad, double[] notasModulo) {
         this.nombre = nombre;
-        Apellido = apellido;
+        this.apellido = apellido;
         this.edad = edad;
+        this.notasModulo = notasModulo;
 
     }
 
@@ -21,11 +23,11 @@ public class Alumno {
     }
 
     public String getApellido() {
-        return Apellido;
+        return apellido;
     }
 
     public void setApellido(String apellido) {
-        Apellido = apellido;
+        apellido = apellido;
     }
 
     public int getEdad() {
@@ -36,12 +38,37 @@ public class Alumno {
         this.edad = edad;
     }
 
+
     @Override
     public String toString() {
-        return "Alumno{" +
-                "nombre='" + nombre + '\'' +
-                ", Apellido='" + Apellido + '\'' +
-                ", edad=" + edad +
-                '}';
+        String notasFormateadas = "";
+        for(double nota : notasModulo){
+            notasFormateadas += nota + ";";
+        }
+        return  apellido + ";" + nombre + ";" + edad + ";"  + notasFormateadas;
+    }
+
+    public String datosEstadisticas() {
+        String notasFormateadas = "";
+        for(double nota : notasModulo){
+            notasFormateadas += nota + ";";
+        }
+        return  apellido + ";" + nombre + ";" + edad + ";"  + notasFormateadas;
+    }
+
+    public boolean todoAprobado(){
+        for (int i = 0; i < notasModulo.length; i++) {
+            if(notasModulo[i] < 5){
+                return false;
+            }
+        }
+        return true;
+    }
+    public double notaMedia(){
+        double notaMedia = 0;
+        for (int i = 0; i < notasModulo.length; i++) {
+            notaMedia += notasModulo[i];
+        }
+        return notaMedia/notasModulo.length;
     }
 }
