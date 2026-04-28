@@ -71,4 +71,18 @@ public class Alumno {
         }
         return notaMedia/notasModulo.length;
     }
+    public int suspensos() {
+        int contador = 0;
+        for (double nota : notasModulo) {
+            if (nota < 5) contador++;
+        }
+        return contador;
+    }
+
+    public boolean todoNotableOSuperior() {
+        for (double nota : notasModulo) {
+            if (nota < 7) return false;
+        }
+        return true;
+    }
 }

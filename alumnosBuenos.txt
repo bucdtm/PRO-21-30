@@ -1,0 +1,5 @@
+1. Alumnos con notas iguales o superiores a 7 en todos los modulos:
+2. Alumno con la mejor nota media:
+   - Linterna Azul Verde (Media: 8,27)
+3. Alumno con la peor nota media:
+   - Maria A. Puerta Enchufe (Media: 5,60)

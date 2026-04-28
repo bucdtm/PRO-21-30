@@ -1,0 +1,10 @@
+1. Número de alumnos con todo aprobado: 5
+2. Alumnos con todo aprobado (ordenados):
+   - Linterna Azul Verde
+   - Noa Calatallud Siro
+   - Juan Gómez Monito
+   - Antonio Lopez Green
+   - Sara Lopez Green
+3. Alumnos entre 30 y 70 años: 4 (Media de edad: 35,75)
+4. Alumnos de mas de 90 años: 1 (Media de edad: 98,00)
+5. Número de alumnos que pasan de curso (max 2 suspensos): 9
