@@ -1,0 +1,28 @@
+[
+  {
+    "nombre": "Guiso de Lentejas",
+    "tiempoTotal": 50,
+    "desgloseTiempos": {
+      "Preparacion": 15,
+      "Coccion": 35
+    },
+    "nutricion": {
+      "Calorías": "350 kcal",
+      "Fibra": "12g",
+      "Hierro": "high"
+    }
+  },
+  {
+    "nombre": "Ensalada",
+    "tiempoTotal": 10,
+    "desgloseTiempos": {
+      "Preparacion": 10,
+      "Coccion": 0
+    },
+    "nutricion": {
+      "Calorías": "150 kcal",
+      "Fibra": "5g",
+      "Hierro": "low"
+    }
+  }
+]
